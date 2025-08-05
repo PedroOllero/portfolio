@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+@layer utilities {
+  .syne-font {
+    font-family: "Syne", sans-serif;
+  }
+  .customShadow-sm {
+    @apply shadow-[2px_2px_0_0_#000];
+  }
+  .customShadow-md {
+    @apply shadow-[4px_4px_0_0_#000];
+  }
+  .customShadow-xl {
+    @apply shadow-[8px_8px_0_0_#000];
+  }
+}
