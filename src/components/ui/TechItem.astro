@@ -1,6 +1,12 @@
 ---
-const img = Astro.props.img
+interface Props {
+  img: string;
+  size?: number;
+}
+
+const { img, size = 48 } = Astro.props as Props;
+const imgStyle = `width:${size}%;height:${size}%;`;
 ---
-<div class="border-2 customShadow-md w-[20vw] md:w-[12vw] lg:w-[8vw] h-[20vw] md:h-[12vw] lg:h-[8vw] bg-white rounded-2xl">
-    
+<div class="border-2 customShadow-md w-[120px] md:w-[120px] lg:w-[180px] h-[120px] md:h-[120px] lg:h-[180px] bg-white rounded-2xl grid place-items-center">
+  <img src={img} alt="TechStack" style={imgStyle} loading="lazy" decoding="async" />
 </div>

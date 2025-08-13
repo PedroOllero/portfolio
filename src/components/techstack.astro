@@ -1,23 +1,45 @@
 ---
+import MailIcon from "../assets/mailIcon.astro";
+import PhoneIcon from "../assets/PhoneIcon.astro";
+import AboutMeItem from "./ui/AboutMeItem.astro";
 import Header from "./ui/Header.astro";
 import TechItem from "./ui/TechItem.astro";
 ---
 
 <main class="h-screen bg-rose-500 pt-2 lg:pt-4">
     <Header label="Tech Stack"/>
-    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-x-4 gap-y-4 mx-[5vw] md:mx-[10vw] lg:mx-[15vw] bg-amber-300 mt-4">
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-        <TechItem/>
-
+    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-x-4 gap-y-4 mx-[5vw] md:mx-[5vw] lg:mx-[5vw] mb-8 mt-8">
+        <TechItem img="/public/html.png" size={70}/>
+        <TechItem img="/public/css.png" size={70}/>
+        <TechItem img="/public/js.png" size={70}/>
+        <TechItem img="/public/typescript.png" size={70}/>
+        <TechItem img="/public/react.png" size={70}/>
+        <TechItem img="/public/Astro.svg.png" size={70}/>
+        <TechItem img="/public/git.png" size={70}/>
+        <TechItem img="/public/vite.png" size={70}/>
+        <TechItem img="/public/node.png" size={70}/>
+        <TechItem img="/public/jira.png" size={70}/>
+        <TechItem img="/public/sass.png" size={70}/>
+        <TechItem img="/public/figma.png" size={70}/>
     </div>
+
+    <Header label="Contact"/>
+    <section class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-y-4 md:gap-y-8 lg:gap-y-8 gap-x-20 mt-8 mx-[5vw]">
+        <article class="contactItem w-[400px] md:w-[500px] lg:w-[500px] ml-10 md:ml-20 lg:ml-60 ">
+            <MailIcon size="50" />
+            <p class="text-xl md:text-2xl lg:text-2xl ml-8">pedroollero1998@gmail.com</p>
+        </article>
+        <article class="contactItem w-[200px] md:w-[300px] lg:w-[300px] ml-70 md:ml-120 lg:ml-30">
+            <PhoneIcon size="40"/>
+            <p class="text-xl md:text-2xl lg:text-2xl ml-8">649549787</p>
+        </article>
+        <article class="contactItem w-[380px] ml-10 md:ml-20 lg:ml-100">
+            <img src="/public/linkedin.png" alt="linkedin" class="w-[40px]">
+            <p class="text-xl md:text-2xl lg:text-2xl ml-8">Pedro Ollero Cervantes</p>
+        </article>
+        <article class="contactItem w-[300px] ml-70 md:ml-120 lg:ml-50">
+            <img src="/public/github.png" alt="linkedin" class="w-[40px]">
+            <p class="text-xl md:text-2xl lg:text-2xl ml-8">/PedroOllero</p>
+        </article>
+    </section>
 </main>

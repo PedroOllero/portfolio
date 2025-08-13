@@ -1,9 +1,17 @@
 ---
 import Nav from "./ui/Nav.astro";
+import ConversationItem from "./visuals/ConversationItem.astro";
 import Ray from "./visuals/Ray.astro";
 ---
-<main class="h-screen bg-yellow-300 mt-2 lg:mt-4">
-    <Nav/>
-    <div></div>
-    <!-- <Ray/> -->
+
+<main class="syne-font h-screen bg-yellow-300 relative">
+  <Ray
+    class="absolute z-0 top-[-500px] translate-[-6%] inset-0 overflow-hidden"
+  />
+  <Nav />
+  
+  <p class="text-3xl mt-30 ml-40">Hi! I am,</p>
+  <h1 class=" font-extrabold text-[100px] ml-40">Pedro Ollero</h1>
+  <img src="/public/ImageCard.png" alt="" class="relative z-10 w-100 left-60 top-10 hover:scale-[105%] duration-300 cursor-pointer">
+  <ConversationItem/>
 </main>
