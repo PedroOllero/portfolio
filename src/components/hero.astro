@@ -1,17 +1,20 @@
 ---
 import Nav from "./ui/Nav.astro";
 import ConversationItem from "./visuals/ConversationItem.astro";
-import Ray from "./visuals/Ray.astro";
+import Mobile from "./visuals/Mobile.astro";
+import Separation1 from "./visuals/Separation1.astro";
 ---
 
 <main class="syne-font h-screen bg-yellow-300 relative">
-  <Ray
-    class="absolute z-0 top-[-500px] translate-[-6%] inset-0 overflow-hidden"
-  />
   <Nav />
+  <Separation1
+    color="bg-red-100"
+    class="absolute z-0 top-[-1000px] translate-[-6%] inset-0 overflow-hidden"
+  />
   
-  <p class="text-3xl mt-30 ml-40">Hi! I am,</p>
+  <p class="text-3xl mt-20 ml-40">Hi! I am,</p>
   <h1 class=" font-extrabold text-[100px] ml-40">Pedro Ollero</h1>
-  <img src="/public/ImageCard.png" alt="" class="relative z-10 w-100 left-60 top-10 hover:scale-[105%] duration-300 cursor-pointer">
+  <img src="/public/ImageCard.png" alt="" class="relative z-10 w-100 left-30 hover:scale-[105%] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer">
   <ConversationItem/>
+  <Mobile class="absolute top-[200px] left-[1300px] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer"/>
 </main>

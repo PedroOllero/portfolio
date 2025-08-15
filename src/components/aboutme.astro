@@ -1,9 +1,14 @@
 ---
 import AboutMeItem from "./ui/AboutMeItem.astro";
 import Header from "./ui/Header.astro";
+import Separation2 from "./visuals/Separation2.astro";
 ---
 
-<main class="h-screen bg-violet-500 pt-2 lg:pt-4">
+<main id="aboutme" class="h-screen bg-violet-500 pt-2 lg:pt-4">
+  <Separation2
+  color="bg-red-100"
+  class="absolute z-0 top-[1550px] translate-[-6%] inset-0 overflow-hidden"
+/>
   <Header label="About me" />
   <div class="flex flex-col justify-center items-center lg:-ml-150 mt-4 lg:mt-10">
     <AboutMeItem customStyle="-translate-x-[3vw]">

@@ -4,9 +4,13 @@ import PhoneIcon from "../assets/PhoneIcon.astro";
 import AboutMeItem from "./ui/AboutMeItem.astro";
 import Header from "./ui/Header.astro";
 import TechItem from "./ui/TechItem.astro";
+import Separation3 from "./visuals/Separation3.astro";
 ---
 
-<main class="h-screen bg-rose-500 pt-2 lg:pt-4">
+<main id="techstack" class="h-screen bg-rose-500 pt-2 lg:pt-4">
+    <Separation3
+    class="absolute z-0 top-[2430px] translate-[-6%] inset-0 overflow-hidden"
+  />
     <Header label="Tech Stack"/>
     <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-x-4 gap-y-4 mx-[5vw] md:mx-[5vw] lg:mx-[5vw] mb-8 mt-8">
         <TechItem img="/public/html.png" size={70}/>

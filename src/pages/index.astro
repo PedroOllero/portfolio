@@ -8,7 +8,7 @@ import Ray from '../components/visuals/Ray.astro';
 import './tailwind.css';
 ---
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,7 +16,7 @@ import './tailwind.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="syne-font bg-yellow-300">
+	<body class="syne-font bg-yellow-300 overflow-x-hidden">
 		<Hero/>
 		<Aboutme/>
 		<Projects/>

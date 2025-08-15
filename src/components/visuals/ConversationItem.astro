@@ -1,21 +1,27 @@
 ---
 import ConverPic1 from "./ConverPic1.astro"
+import ConverPic2 from "./ConverPic2.astro"
 ---
-<div class="relative z-10 border-2 bg-white rounded-2xl px-4 py-4 w-[550px] left-[45vw] bottom-50 customShadow-md">
-  <div class="bg-yellow-300 border-2 px-4 py-4 rounded-2xl flex flex-row justify-center items-top">
+<div class="relative z-10 border-2 bg-white rounded-2xl px-4 py-4 w-[560px] left-[35vw] bottom-80 customShadow-md hover:scale-[101%] duration-300 ease-in-out">
+  <div class="bg-yellow-300 border-2 px-4 py-4 mb-4 rounded-2xl w-[430px] flex flex-row justify-left items-top">
       <ConverPic1/>
     <p class="text-2xl ml-5">
-      I’m a Frontend Developer with experience developing websites and building
+      I’m a <stong class="font-bold">Frontend Developer</stong> with experience developing websites and building
       modern and performant mobile applications.
     </p>
   </div>
-  <div>
-    <p class="text-2xl">Hello, Pedro!</p>
+  <div class="bg-rose-500 border-2 px-4 py-4 mb-4 ml-[95px] rounded-2xl w-[430px] flex flex-row justify-end items-top">
+    <p class="text-2xl mr-5">
+      Hello Pedro, I'm the recruiter, let's see what you're made of.</p>
+    <ConverPic2/>
   </div>
-  <div>
-    <p class="text-2xl">I want to know more about you</p>
+  <div class="flex flex-row justify-between">
+    <div class="bg-rose-500 border-2 px-4 py-4 rounded-2xl">
+      <p class="text-2xl">I want to know more about you<span class=" animate-ping">|</span> </p>
+    </div>
+    <a href="#aboutme" class="bg-green-300 border-2 px-4 py-4 rounded-2xl w-[150px] buttonAnimation">
+      <p class="text-2xl font-bold text-center">SEND</p>
+    </a>
+
   </div>
-  <a href="">
-    <p class="text-2xl font-bold">SEND</p>
-  </a>
 </div>
