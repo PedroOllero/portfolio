@@ -3,38 +3,77 @@ import Header from "./ui/Header.astro";
 import ProjectItem from "./ui/ProjectItem.astro";
 ---
 
-<main id="projects" class="h-screen bg-green-300 pt-2 lg:pt-4">
+<main id="projects" class="h-screen pt-2 lg:pt-4">
   <Header label="Experience" />
-  <div class="flex flex-col lg:flex-row justify-around items-center mx-0 lg:mx-4 mt-4 lg:mt-10 ">
+  <div
+    class="flex flex-col lg:flex-row justify-around items-center mx-0 lg:mx-4 mt-4 lg:mt-10"
+  >
     <ProjectItem
+      role="Mobile App Developer"
       label="Feats"
       tech1="React Native"
       tech2="Jest"
       tech3="API Rest"
       customStyle="-translate-x-1 lg:translate-x-0"
     >
-      <p>
-        This is the explanation of the project; it should be very detailed so
-        that the recruiter believes I know what I’m doing.
+      <p class="lg:text-xl">
+        I co-founded this startup, which is a social network for artists. In
+        addition to overseeing the product, I was also responsible for
+        developing the application itself in React Native:
       </p>
+      <ul class="lg:text-xl list-disc ml-8 mt-2">
+        <li>
+          Creation and optimization of reusable components to improve project
+          scalability.
+        </li>
+        <li>
+          Implementation of custom hooks to manage business logic and state.
+        </li>
+        <li>
+          Integration with REST APIs, data handling, and efficient consumption
+          of external services.
+        </li>
+        <li>
+          Design and layout of responsive screens, ensuring user experience and
+          visual consistency.
+        </li>
+        <li>
+          Collaboration with the backend and design teams to ensure an agile and
+          efficient development workflow.
+        </li>
+      </ul>
     </ProjectItem>
     <ProjectItem
-      label="Feats"
-      tech1="React Native"
-      tech2="Jest"
-      tech3="API Rest"
-      customStyle="mt-4 lg:mt-0 lg:translate-y-30 translate-x-1 lg:translate-x-0"
+      role="Fullstack Developer"
+      label="OasisVive"
+      tech1="Nestjs"
+      tech2="Astro"
+      tech3="Tailwindcss"
+      customStyle="mt-4 lg:mt-0 translate-x-1 lg:translate-x-0"
     >
-      <p>
-        This is the explanation of the project; it should be very detailed so
-        that the recruiter believes I know what I’m doing.
+      <p class="lg:text-xl">
+        Developed a high-performance real estate website, delivering:
       </p>
+      <ul class="lg:text-xl list-disc ml-8 mt-2">
+        <li>
+          A fully responsive UI in Figma, optimized for all devices.
+        </li>
+        <li>
+          A NestJS REST API for dynamic property management, with media hosted on Cloudinary.
+        </li>
+        <li>
+          An Astro frontend achieving lightning-fast load times and strong SEO performance, boosting local search rankings.
+        </li>
+        <li>
+          Clean, maintainable styles using Tailwind CSS.
+        </li>
+      </ul>
     </ProjectItem>
     <ProjectItem
       label="Feats"
-      tech1="React Native"
-      tech2="Jest"
-      tech3="API Rest"
+      tech1="Nestjs"
+      tech2="Astro"
+      tech3="Tailwindcss"
       customStyle="mt-4 lg:mt-0 -translate-x-1 lg:translate-x-0"
     >
       <p>

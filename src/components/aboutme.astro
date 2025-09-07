@@ -1,16 +1,12 @@
 ---
 import AboutMeItem from "./ui/AboutMeItem.astro";
 import Header from "./ui/Header.astro";
-import Separation2 from "./visuals/Separation2.astro";
+import ConversationItem2 from "./visuals/ConversationItem2.astro";
 ---
 
-<main id="aboutme" class="h-screen bg-violet-500 pt-2 lg:pt-4">
-  <Separation2
-  color="bg-red-100"
-  class="absolute z-0 top-[1550px] translate-[-6%] inset-0 overflow-hidden"
-/>
+<main id="aboutme" class="h-screen pt-2 lg:pt-4">
   <Header label="About me" />
-  <div class="flex flex-col justify-center items-center lg:-ml-150 mt-4 lg:mt-10">
+  <div class="flex flex-col justify-center items-center min-h-[calc(100vh-6rem)] lg:-ml-150 pt-4 lg:pt-10">
     <AboutMeItem customStyle="-translate-x-[3vw]">
       <p class="text-xl">
         After working as a journalist and content manager for media station such
@@ -18,7 +14,7 @@ import Separation2 from "./visuals/Separation2.astro";
         interested in web development a few years ago.
       </p>
     </AboutMeItem>
-    <AboutMeItem customStyle="mt-4 lg:mt-10 translate-x-[3vw]">
+    <AboutMeItem customStyle="mt-2 lg:mt-5 translate-x-[3vw]">
       <p class="text-xl">
         The knowledge gained through my <strong
           >Media Communication Degree</strong
@@ -28,7 +24,7 @@ import Separation2 from "./visuals/Separation2.astro";
         > within the world of developers.
       </p>
     </AboutMeItem>
-    <AboutMeItem customStyle="mt-4 lg:mt-10 -translate-x-[3vw]">
+    <AboutMeItem customStyle="mt-2 lg:mt-5 -translate-x-[3vw]">
       <p class="text-xl">
         I’m a <strong>proactive, communicative, and determined</strong> person with
         <strong>strong leadership skills</strong> . Aware of my potential and everything
@@ -38,4 +34,5 @@ import Separation2 from "./visuals/Separation2.astro";
       </p>
     </AboutMeItem>
   </div>
+  <ConversationItem2/>
 </main>

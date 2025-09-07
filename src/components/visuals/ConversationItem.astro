@@ -1,27 +1,22 @@
----
-import ConverPic1 from "./ConverPic1.astro"
-import ConverPic2 from "./ConverPic2.astro"
----
-<div class="relative z-10 border-2 bg-white rounded-2xl px-4 py-4 w-[560px] left-[35vw] bottom-80 customShadow-md hover:scale-[101%] duration-300 ease-in-out">
-  <div class="bg-yellow-300 border-2 px-4 py-4 mb-4 rounded-2xl w-[430px] flex flex-row justify-left items-top">
-      <ConverPic1/>
-    <p class="text-2xl ml-5">
-      I’m a <stong class="font-bold">Frontend Developer</stong> with experience developing websites and building
+<div class="relative z-10 border-2 bg-white rounded-2xl px-4 py-4 mx-auto w-[90vw] lg:w-[20vw] lg:min-w-[500px] lg:bottom-90 customShadow-md hover:lg:scale-[101%] duration-300 ease-in-out">
+  <div class="bg-yellow-300 border-2 px-4 py-2 mb-2 rounded-2xl w-[75vw] lg:w-[17vw] lg:min-w-[450px] flex flex-row justify-left items-top">
+      <img src="/ConverPic1.png" alt="ConverPic1" class="size-12">
+    <p class="ml-5 text-sm lg:text-xl">
+      I’m a <strong class="font-bold">Frontend Developer</strong> with experience developing websites and building
       modern and performant mobile applications.
     </p>
   </div>
-  <div class="bg-rose-500 border-2 px-4 py-4 mb-4 ml-[95px] rounded-2xl w-[430px] flex flex-row justify-end items-top">
-    <p class="text-2xl mr-5">
+  <div class="bg-rose-500 border-2 px-4 py-2 mb-6 lg:mb-12 ml-auto rounded-2xl w-[70vw] lg:w-[12vw] lg:min-w-[400px] flex flex-row justify-end items-top">
+    <p class="mr-5 text-sm lg:text-xl">
       Hello Pedro, I'm the recruiter, let's see what you're made of.</p>
-    <ConverPic2/>
+      <img src="/ConverPic2.png" alt="ConverPic2" class="size-12">
   </div>
   <div class="flex flex-row justify-between">
-    <div class="bg-rose-500 border-2 px-4 py-4 rounded-2xl">
-      <p class="text-2xl">I want to know more about you<span class=" animate-ping">|</span> </p>
+    <div class="bg-rose-500 border-2 px-2 py-4 rounded-2xl w-[75%]">
+      <p class="text-sm lg:text-xl">I want to know more about you<span class=" animate-ping">|</span> </p>
     </div>
-    <a href="#aboutme" class="bg-green-300 border-2 px-4 py-4 rounded-2xl w-[150px] buttonAnimation">
-      <p class="text-2xl font-bold text-center">SEND</p>
+    <a href="#aboutme" class="bg-green-300 border-2 py-4 rounded-2xl w-[23%] buttonAnimation">
+      <p class="font-bold text-center text-sm lg:text-xl mx-auto">SEND</p>
     </a>
-
   </div>
 </div>

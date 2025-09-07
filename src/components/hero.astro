@@ -2,19 +2,22 @@
 import Nav from "./ui/Nav.astro";
 import ConversationItem from "./visuals/ConversationItem.astro";
 import Mobile from "./visuals/Mobile.astro";
-import Separation1 from "./visuals/Separation1.astro";
 ---
-
-<main class="syne-font h-screen bg-yellow-300 relative">
+<main class="syne-font h-screen relative">
   <Nav />
-  <Separation1
-    color="bg-red-100"
-    class="absolute z-0 top-[-1000px] translate-[-6%] inset-0 overflow-hidden"
-  />
-  
-  <p class="text-3xl mt-20 ml-40">Hi! I am,</p>
-  <h1 class=" font-extrabold text-[100px] ml-40">Pedro Ollero</h1>
-  <img src="/public/ImageCard.png" alt="" class="relative z-10 w-100 left-30 hover:scale-[105%] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer">
+  <p class="z-10 text-xl lg:text-3xl mt-8 lg:mt-10 ml-8 lg:ml-32">Hi! I am,</p>
+  <h1 class="z-10 font-extrabold text-4xl lg:text-[6vw] ml-8 lg:ml-30">
+    Pedro Ollero
+  </h1>
+  <div class="flex flex-row justify-center ">
+    <img
+      src="/ImageCard.png"
+      alt=""
+      class="relative z-10 w-[40vw] lg:w-90 h-[40vw] lg:h-85 top-2 lg:top-4 right-0 lg:right-[20vw] hover:scale-[105%] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer"
+    />
+    <Mobile
+      class="relative z-10 size-[40vw] lg:size-100 top-2 lg:-top-40 left-5 lg:left-[20vw] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer"
+    />
+  </div>
   <ConversationItem/>
-  <Mobile class="absolute top-[200px] left-[1300px] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer"/>
 </main>
