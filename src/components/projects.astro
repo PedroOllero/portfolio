@@ -16,12 +16,19 @@ import ProjectItem from "./ui/ProjectItem.astro";
       tech3="API Rest"
       customStyle="-translate-x-1 lg:translate-x-0"
     >
-      <p class="lg:text-xl">
+      <p class="lg:text-[1vw] hidden lg:block">
         I co-founded this startup, which is a social network for artists. In
         addition to overseeing the product, I was also responsible for
         developing the application itself in React Native:
       </p>
-      <ul class="lg:text-xl list-disc ml-8 mt-2">
+      <p class="text-sm lg:hidden">
+        I co-founded a startup that serves as a social network for artists,
+        where I not only led the product but also developed the application in
+        React Native. My work focused on building scalable, reusable components
+        and implementing custom hooks to manage business logic and state
+        efficiently.
+      </p>
+      <ul class="lg:text-[1vw] list-disc ml-8 mt-2 hidden lg:block">
         <li>
           Creation and optimization of reusable components to improve project
           scalability.
@@ -51,25 +58,30 @@ import ProjectItem from "./ui/ProjectItem.astro";
       tech3="Tailwindcss"
       customStyle="mt-4 lg:mt-0 translate-x-1 lg:translate-x-0"
     >
-      <p class="lg:text-xl">
+      <p class="lg:text-[1vw] hidden lg:block">
         Developed a high-performance real estate website, delivering:
       </p>
-      <ul class="lg:text-xl list-disc ml-8 mt-2">
+      <p class="text-sm lg:hidden">
+        Developed a high-performance real estate website with a responsive Figma
+        UI, a NestJS REST API for dynamic property management, and Cloudinary
+        media hosting. Built with Astro for lightning-fast load times and strong
+        SEO, and styled with Tailwind CSS for clean, maintainable, and scalable
+        design.
+      </p>
+      <ul class="lg:text-[1vw] list-disc ml-8 mt-2 hidden lg:block">
+        <li>A fully responsive UI in Figma, optimized for all devices.</li>
         <li>
-          A fully responsive UI in Figma, optimized for all devices.
+          A NestJS REST API for dynamic property management, with media hosted
+          on Cloudinary.
         </li>
         <li>
-          A NestJS REST API for dynamic property management, with media hosted on Cloudinary.
+          An Astro frontend achieving lightning-fast load times and strong SEO
+          performance, boosting local search rankings.
         </li>
-        <li>
-          An Astro frontend achieving lightning-fast load times and strong SEO performance, boosting local search rankings.
-        </li>
-        <li>
-          Clean, maintainable styles using Tailwind CSS.
-        </li>
+        <li>Clean, maintainable styles using Tailwind CSS.</li>
       </ul>
     </ProjectItem>
-    <ProjectItem
+    <!-- <ProjectItem
       label="Feats"
       tech1="Nestjs"
       tech2="Astro"
@@ -80,6 +92,6 @@ import ProjectItem from "./ui/ProjectItem.astro";
         This is the explanation of the project; it should be very detailed so
         that the recruiter believes I know what I’m doing.
       </p>
-    </ProjectItem>
+    </ProjectItem> -->
   </div>
 </main>

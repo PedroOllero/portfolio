@@ -1,6 +1,8 @@
 ---
 import Aboutme from "../components/aboutme.astro";
 import Hero from "../components/hero.astro";
+import Projects from "../components/projects.astro";
+import Techstack from "../components/techstack.astro";
 import "./tailwind.css";
 ---
 
@@ -16,13 +18,14 @@ import "./tailwind.css";
     <title>Astro</title>
   </head>
   <body class="syne-font bg-rose-500 w-full max-w-full">
-    <img src="/Phone.png" class="w-full absolute top-0 block md:hidden -z-10">
-    <img src="/Desktop.png" class="w-full absolute top-0 hidden md:block -z-10">
+    <img src="/Phone.png" class="w-full absolute top-0 block md:hidden -z-10" />
+    <img
+      src="/Desktop.png"
+      class="w-full absolute top-0 hidden md:block -z-10"
+    />
     <Hero />
     <Aboutme />
-    <!-- <Projects /> -->
-    <!-- <Techstack />
-    <Contact /> -->
-
+    <Projects />
+    <Techstack />
   </body>
 </html>

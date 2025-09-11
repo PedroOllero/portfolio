@@ -1,21 +1,25 @@
 ---
 import AboutMeItem from "./ui/AboutMeItem.astro";
 import Header from "./ui/Header.astro";
+import Arrow from "./visuals/Arrow.astro";
 import ConversationItem2 from "./visuals/ConversationItem2.astro";
 ---
 
-<main id="aboutme" class="h-screen pt-2 lg:pt-4">
+<main id="aboutme" class="h-screen pt-2 lg:pt-4 relative ">
   <Header label="About me" />
-  <div class="flex flex-col justify-center items-center min-h-[calc(100vh-6rem)] lg:-ml-150 pt-4 lg:pt-10">
+  <!-- <div class="absolute translate-x-[85vw] -translate-y-20 lg:translate-x-[70vw] lg:-translate-y-10 transform scale-y-[-1]">
+    <Arrow />
+  </div> -->
+  <div class="flex flex-col justify-start lg:justify-center items-center min-h-[calc(100vh-6rem)] lg:-ml-150 pt-4 lg:pt-10">
     <AboutMeItem customStyle="-translate-x-[3vw]">
-      <p class="text-xl">
+      <p class="text-sm lg:text-[1vw]">
         After working as a journalist and content manager for media station such
         as <strong>COPE</strong> and <strong>BeSoccer</strong>, I became
         interested in web development a few years ago.
       </p>
     </AboutMeItem>
     <AboutMeItem customStyle="mt-2 lg:mt-5 translate-x-[3vw]">
-      <p class="text-xl">
+      <p class="text-sm lg:text-[1vw]">
         The knowledge gained through my <strong
           >Media Communication Degree</strong
         > at the University of Málaga and Middlesex University, combined with my
@@ -25,14 +29,19 @@ import ConversationItem2 from "./visuals/ConversationItem2.astro";
       </p>
     </AboutMeItem>
     <AboutMeItem customStyle="mt-2 lg:mt-5 -translate-x-[3vw]">
-      <p class="text-xl">
+      <p class="text-sm lg:text-[1vw]">
         I’m a <strong>proactive, communicative, and determined</strong> person with
-        <strong>strong leadership skills</strong> . Aware of my potential and everything
+        <strong>strong leadership skills.</strong> Aware of my potential and everything
         I still have to learn, I’m highly motivated to take on <strong
           >a new professional challenge</strong
         > .
       </p>
     </AboutMeItem>
+    <div class="sm:block lg:hidden md:hidden mt-10">
+      <ConversationItem2/>
+    </div>
   </div>
-  <ConversationItem2/>
+  <div class="absolute hidden lg:block lg:top-1/2 lg:left-[75%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:z-50">
+    <ConversationItem2/>
+  </div>
 </main>
