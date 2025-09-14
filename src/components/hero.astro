@@ -6,15 +6,15 @@ import Mobile from "./visuals/Mobile.astro";
 
 <main class="syne-font h-screen relative">
   <Nav />
-  <p class="z-10 text-xl lg:text-3xl mt-8 lg:mt-10 ml-8 lg:ml-32">Hi! I am,</p>
-  <h1 class="z-10 font-extrabold text-4xl lg:text-[6vw] ml-8 lg:ml-30">
+  <p class="z-10 text-xl lg:text-3xl mt-8 lg:mt-10 ml-8 lg:ml-32 animate-zoomInAndOut">Hi! I am,</p>
+  <h1 class="z-10 font-extrabold text-4xl lg:text-[6vw] ml-8 lg:ml-30 animate-zoomInAndOutDelayed">
     Pedro Ollero
   </h1>
   <div class="flex flex-row justify-center">
     <a
       href="/CV.pdf"
       download="Pedro Ollero Cervantes CV.pdf"
-      class="relative z-10 w-[40vw] lg:w-90 h-[40vw] lg:h-85 top-2 lg:top-4 right-0 lg:right-[20vw] hover:scale-[105%] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer"
+      class="relative z-10 w-[40vw] lg:w-90 h-[40vw] lg:h-85 top-2 lg:top-4 right-0 lg:right-[20vw] hover:scale-[105%] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer animate-slideInLeft"
     >
       <img src="/ImageCard.webp" alt="Image Card" />
     </a>
@@ -22,7 +22,7 @@ import Mobile from "./visuals/Mobile.astro";
       href="tel:+34649549787"
     >
       <Mobile 
-      class="relative z-10 size-[40vw] lg:size-100 top-2 lg:-top-40 left-5 lg:left-[20vw] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer"
+      class="relative z-10 size-[40vw] lg:size-100 top-2 lg:-top-40 left-5 lg:left-[20vw] hover:rotate-[-5deg] ease-in-out duration-300 cursor-pointer animate-slideInRight"
       />
     </a>
   </div>
