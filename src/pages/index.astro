@@ -11,14 +11,46 @@ import "./tailwind.css";
   class="scroll-smooth overflow-y-auto overflow-x-hidden overscroll-none"
 >
   <head>
+    <meta
+      name="description"
+      content="Portfolio of Pedro Ollero, frontend developer specialized in React, Astro, and Tailwind. Explore my projects and experience."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, React, Astro, Tailwind, Portfolio, Pedro Ollero"
+    />
+    <meta name="author" content="Pedro Ollero" />
+
+    <meta property="og:title" content="Pedro Ollero – Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Pedro Ollero, frontend developer specialized in React, Astro, and Tailwind."
+    />
+    <meta property="og:image" content="/preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.dev" />
+
+    <meta name="twitter:card" content="summary_large_image" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/ConverPic1.webp" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pedro Ollero",
+        "url": "https://pedroollero.dev",
+        "jobTitle": "Frontend Developer",
+        "sameAs": [
+          "https://www.linkedin.com/in/pedroollero",
+          "https://github.com/PedroOllero"
+        ]
+      }
+    </script>
     <title>Frontend Developer | Pedro Ollero</title>
   </head>
   <body class="syne-font bg-rose-500 w-full max-w-full">
-
     <div
       class="parallax-decoration absolute top-0 left-0 w-full h-[400%] bg-cover bg-center -z-10 block md:hidden"
       style="background-image: url('/MobileDecorations.webp');"
