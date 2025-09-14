@@ -18,14 +18,55 @@ import "./tailwind.css";
     <title>Astro</title>
   </head>
   <body class="syne-font bg-rose-500 w-full max-w-full">
-    <img src="/Phone.png" class="w-full absolute top-0 block md:hidden -z-10" />
-    <img
-      src="/Desktop.png"
-      class="w-full absolute top-0 hidden md:block -z-10"
-    />
+
+    <div
+      class="parallax-decoration absolute top-0 left-0 w-full h-[400%] bg-cover bg-center -z-10 block md:hidden"
+      style="background-image: url('/MobileDecorations.png');"
+    >
+    </div>
+    <div
+      class="parallax-bg absolute top-0 left-0 w-full h-[400%] bg-cover bg-center -z-20 block md:hidden"
+      style="background-image: url('/MobileBackground.png');"
+    >
+    </div>
+    <div
+      class="parallax-decoration absolute top-0 left-0 w-full h-[400%] bg-cover bg-center -z-10 hidden md:block lg:block"
+      style="background-image: url('/DesktopDecorations.png');"
+    >
+    </div>
+    <div
+      class="parallax-bg absolute top-0 left-0 w-full h-[400%] bg-cover bg-center -z-20 hidden md:block lg:block"
+      style="background-image: url('/DesktopBackground.png');"
+    >
+    </div>
     <Hero />
     <Aboutme />
     <Projects />
     <Techstack />
+
+    <script>
+      if (typeof window !== "undefined") {
+        const bg = document.querySelectorAll(".parallax-bg");
+        const deco = document.querySelectorAll(".parallax-decoration");
+        const content = document.querySelector("body"); // o un wrapper si quieres moverlo
+
+        window.addEventListener("scroll", () => {
+          const scrollY = window.scrollY;
+
+          // capa fondo (más lento)
+          // bg.forEach((el) => {
+          //   el.style.transform = `translateY(${scrollY * 0.03}px)`;
+          // });
+
+          // capa decoración (intermedio)
+          deco.forEach((el) => {
+            el.style.transform = `translateY(${scrollY * 0.03}px)`;
+          });
+
+          // capa contenido (opcional, se mueve más rápido o se deja fijo)
+          // content.style.transform = `translateY(${scrollY * 0.1}px)`;
+        });
+      }
+    </script>
   </body>
 </html>
