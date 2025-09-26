@@ -128,10 +128,32 @@
 
   .animate-zoomInAndOut {
     animation: zoomInAndOut 1s ease-in-out;
-    animation-delay: 500ms;
+    animation-delay: 700ms;
   }
   .animate-zoomInAndOutDelayed {
     animation: zoomInAndOut 1s ease-in-out;
-    animation-delay: 600ms;
+    animation-delay: 800ms;
+  }
+
+  @keyframes pop {
+    0% {
+      transform: scale(0);
+    }
+    70% {
+      transform: scale(1.05);
+    }
+    80%{
+      transform: scale(0.95);
+    }
+    90%{
+      transform: scale(1.03);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  .animate-pop {
+    animation: pop 700ms ease-in-out;
   }
 }
